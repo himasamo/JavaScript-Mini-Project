@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+*, *:after. *:before{box-sizing: border-box;}
+body{
+  background: white;
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: "Raleway", sans-serif;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: #FFF498;
+}
+
+.jumbotron {
+  margin: 30px;
+  padding: 30px;
+  background: #fafafa !important;
+  border-radius: 4px;
+  box-shadow: 0 10px 6px -6px rgba(0,0,0,0.2)
+}
+
+.text-giant {
+  font-size: 40px;
+}

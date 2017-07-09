@@ -1,0 +1,61 @@
+html{box-sizing: border-box;}
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body{padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #EFEFEF !important;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.accordion{
+  background: white;
+  border-radius: 5px;
+  padding: 0 20px;
+  box-shadow: 0 10px 6px -6px rgba(0,0,0,0.12)
+
+}
+.accordion ul{
+  margin-bottom: 0px;
+}
+.question{
+  border-top: 1px solid #eee;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.question h2{
+  font-size: 20px;
+  color: #c00c00;
+  margin: 0px;
+}
+.question .glyphicon{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #c00c00;
+  transition: 1s cubic-bezier(0.175,0.885,0.32,1.275) all;
+}
+.answer{
+  transition: 1s cubic-bezier(0.175,0.885,0.32,1.275) all;
+  max-height: 0px;
+  overflow: hidden;
+}
+.answer p{
+  padding: 20px;
+  margin: 0px;
+}
+.accordion li.open .question .glyphicon{
+  transform: rotate(180deg);
+}
+.accordion li.open .answer{
+  max-height: 150px;
+}
